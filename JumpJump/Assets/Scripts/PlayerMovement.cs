@@ -2,23 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Controller2D))]
 public class PlayerMovement : MonoBehaviour {
 
-    public float jumpForce = 5f;
+    public Vector2 jump;
 
-    private Transform playerTransform;
-    private Rigidbody2D rb2d;
+    Controller2D controller;
+
+    public float maxJumpHeight = 4f;
+    public float minJumpHeight = 1;
+    public float timeToJumpApex = .4f;
+
+    float gravity;
+    float maxJumpVelocity;
+    float minJumpVelocity;
+
+    Vector3 velocity;
 
 	private void Awake()
 	{
-        playerTransform = transform;
-        rb2d = GetComponent<Rigidbody2D>();
+        controller = GetComponent<Controller2D>();
 	}
 
-	public void MovePlayer(){
+    private void Update()
+    {
+        CalculateGravity();
 
-        rb2d.AddForce(new Vector2(1, jumpForce), ForceMode2D.Impulse);
+        Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
+        velocity.x = input.x;
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
+
+    }
+	void CalculateGravity()
+    {
+
+        gravity = -(2 * maxJumpHeight) / Mathf.Pow(timeToJumpApex, 2);
+        maxJumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
+        minJumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(gravity) * minJumpHeight);
 
     }
 
