@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{F2C86690-93BE-43F3-0A08-ABAE2451ED7A}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Tiling.cs" Line="34" Column="28" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="7" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.JumpJump PreferredExecutionTarget="Unity.Editor" />
+</Properties>
