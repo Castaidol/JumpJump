@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour {
 
 	void Update () {
 
-         Vector3 newCameraPosition = new Vector3(target.position.x - transform.position.x, 0, 0);
+        Vector3 newCameraPosition = new Vector3(target.position.x - transform.position.x, 0, 0);
 
         transform.Translate(newCameraPosition);
 	}

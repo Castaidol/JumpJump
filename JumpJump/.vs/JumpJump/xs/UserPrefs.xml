@@ -4,7 +4,7 @@
       <File FileName="Assets/Scripts/Tiling.cs" Line="34" Column="28" />
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="45" Column="31" />
       <File FileName="Assets/Scripts/Controller2D.cs" Line="93" Column="53" />
-      <File FileName="Assets/Scripts/CameraFollow.cs" Line="8" Column="5" />
+      <File FileName="Assets/Scripts/CameraFollow.cs" Line="8" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
