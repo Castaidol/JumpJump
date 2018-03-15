@@ -6,6 +6,7 @@ using UnityEngine;
 public class Controller2D : MonoBehaviour
 {
     public LayerMask collisionMask;
+    public Animator anim;
 
     public const float skinWidth = 0.015f;
     public int horizontalRayCount = 4;
@@ -25,6 +26,7 @@ public class Controller2D : MonoBehaviour
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void Start()
@@ -37,9 +39,12 @@ public class Controller2D : MonoBehaviour
         UpdateRaycastOrigin();
         collisions.Reset();
 
+        anim.SetBool("Ground", collisions.below);
+
         if(velocity.y != 0)
         {
             VerticalCollision(ref velocity);
+            anim.SetFloat("VSpeed", velocity.y);
         }
         if(velocity.x != 0)
         {
@@ -69,6 +74,7 @@ public class Controller2D : MonoBehaviour
 
                 collisions.right = directionX == 1;
                 collisions.left = directionX == -1;
+
             }
         }
     }
@@ -91,6 +97,8 @@ public class Controller2D : MonoBehaviour
 
                 collisions.above = directionY == 1;
                 collisions.below = directionY == -1;
+
+                anim.SetBool("Ground", collisions.below);
             }
         }
     }
