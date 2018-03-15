@@ -20,8 +20,9 @@ public class Tiling : MonoBehaviour {
 
 	private void Start()
 	{
-        SpriteRenderer tileSpriteRenderer = tile.GetComponent<SpriteRenderer>();
-        tileWidth = tileSpriteRenderer.bounds.size.x;
+        //SpriteRenderer tileSpriteRenderer = tile.GetComponent<SpriteRenderer>();
+        BoxCollider2D tileBoxCollider = GetComponent<BoxCollider2D>();
+        tileWidth = tileBoxCollider.bounds.size.x;
 	}
 
 	void Update () {
