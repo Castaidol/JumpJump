@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4604598829860364}
   - component: {fileID: 212835505132738188}
+  - component: {fileID: 114538121794638678}
   m_Layer: 0
   m_Name: obj_stoneblock010
   m_TagString: Untagged
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114538121794638678
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1447196444498084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03be517f842734012a8811ca033c9f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetx: 2
 --- !u!212 &212835505132738188
 SpriteRenderer:
   m_ObjectHideFlags: 1

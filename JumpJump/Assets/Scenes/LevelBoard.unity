@@ -113,30 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &1380826648 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4422380754984462, guid: 143498fb2995f4deeb1c81508891ae38,
-    type: 2}
-  m_PrefabInternal: {fileID: 2086245152}
---- !u!1 &1490814823 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1756489663587328, guid: 4bf58e34bbe214b06b48440b6df941f9,
-    type: 2}
-  m_PrefabInternal: {fileID: 2010723163}
---- !u!114 &1490814827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1490814823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2be4e38128e49fdba9d44ed9bba1fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetx: -1
-  tile: {fileID: 1756489663587328, guid: 4bf58e34bbe214b06b48440b6df941f9, type: 2}
---- !u!1001 &2010723163
+--- !u!1001 &403498618
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -173,16 +150,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4333511379077086, guid: 4bf58e34bbe214b06b48440b6df941f9, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1756489663587328, guid: 4bf58e34bbe214b06b48440b6df941f9, type: 2}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 7707008975528953803, guid: 0000000000000000d000000000000000,
-        type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bf58e34bbe214b06b48440b6df941f9, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1380826648 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4422380754984462, guid: 143498fb2995f4deeb1c81508891ae38,
+    type: 2}
+  m_PrefabInternal: {fileID: 2086245152}
 --- !u!1 &2011303648
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +291,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4422380754984462, guid: 143498fb2995f4deeb1c81508891ae38, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 137831893415997430, guid: 143498fb2995f4deeb1c81508891ae38,
         type: 2}
