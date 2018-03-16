@@ -543,6 +543,16 @@ Prefab:
       propertyPath: m_Offset.x
       value: -0.04
       objectReference: {fileID: 0}
+    - target: {fileID: 114519335161041670, guid: 143498fb2995f4deeb1c81508891ae38,
+        type: 2}
+      propertyPath: JumpHeight
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114519335161041670, guid: 143498fb2995f4deeb1c81508891ae38,
+        type: 2}
+      propertyPath: timeToJumpApex
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 143498fb2995f4deeb1c81508891ae38, type: 2}
   m_IsPrefabParent: 0

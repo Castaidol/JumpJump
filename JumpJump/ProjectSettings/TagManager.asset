@@ -41,6 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: RedKnight
+  - name: Knight
     uniqueID: 1252797231
     locked: 0
