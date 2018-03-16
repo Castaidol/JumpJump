@@ -48,7 +48,7 @@ public class Tiling : MonoBehaviour {
     void MakeANewTile(float offsety){
 
         Vector3 newPosition = new Vector3(myTransform.position.x + tileWidth, myTransform.position.y + offsety, myTransform.position.z);
-        GameObject newBuddy = Instantiate(tile, newPosition, Quaternion.identity);
+        Instantiate(tile, newPosition, Quaternion.identity);
     }
 
     void CheckPositionTile()

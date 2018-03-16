@@ -6,7 +6,10 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Controller2D))]
 public class PlayerMovement : MonoBehaviour {
 
-    //public Button moveButton;
+
+
+
+    public float smoothing = 1f;
 
     Controller2D controller;
 
@@ -24,8 +27,9 @@ public class PlayerMovement : MonoBehaviour {
 	private void Awake()
 	{
         controller = GetComponent<Controller2D>();
-        //Button bnt = moveButton.GetComponent<Button>();
-        //bnt.onClick.AddListener(Jump);
+        GameObject moveButton = GameObject.FindGameObjectWithTag("JumpButton");
+        Button bnt = moveButton.GetComponent<Button>();
+        bnt.onClick.AddListener(Jump);
 	}
 
     private void Update()
@@ -37,12 +41,6 @@ public class PlayerMovement : MonoBehaviour {
         if(controller.collisions.above || controller.collisions.below)
         {
             velocity.y = 0;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
-        {
-            velocity.y = jumpVelocity;
-            velocity.x = jumpX;
         }
 
         float targetVelocity = input.x;
@@ -58,15 +56,16 @@ public class PlayerMovement : MonoBehaviour {
         jumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
 
     }
-    /*
+
     void Jump(){
         if (controller.collisions.below)
         {
             velocity.y = jumpVelocity;
-            velocity.x = jumpX;
+            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z), smoothing * Time.deltaTime);
+            //velocity.x = jumpX;
             controller.Move(velocity * Time.deltaTime);
             Debug.Log("jump");
         }
-    }*/
+    }
 
 }

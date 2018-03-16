@@ -14,7 +14,7 @@ public class DestroyTile : MonoBehaviour {
 	{
         cam = Camera.main;
         myTransform = transform;
-        BoxCollider2D tileBoxCollider = GetComponent<BoxCollider2D>();
+        //BoxCollider2D tileBoxCollider = GetComponent<BoxCollider2D>();
 	}
 
 	

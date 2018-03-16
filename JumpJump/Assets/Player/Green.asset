@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b47ab49df09842539748a71cedbcb6a, type: 3}
+  m_Name: Green
+  m_EditorClassIdentifier: 
+  name: GreenKnight
+  description: Ha il colore della bile
+  playableKnight: {fileID: 1988686933922368, guid: b06c89bbca63f4103b58ca15f2fcaa73,
+    type: 2}
+  selectableKnigt: {fileID: 1167814701782080, guid: 3837566d25e404aa3ad7be87a312db3f,
+    type: 2}
+  healt: 4

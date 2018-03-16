@@ -5,7 +5,13 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour {
 
 
-    public Transform target;
+    private Transform target;
+
+	private void Awake()
+	{
+        GameObject knight = GameObject.FindGameObjectWithTag("Player");
+        target = knight.GetComponent<Transform>();
+	}
 
 	void Update () {
 
