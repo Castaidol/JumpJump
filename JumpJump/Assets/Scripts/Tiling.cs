@@ -101,7 +101,7 @@ public class Tiling : MonoBehaviour {
 
         }
 
-        else if (canGoUp && !canGoUp)
+        else /*if (canGoUp && !canGoUp)*/
         {
             if (r <= 40)
             {
@@ -112,9 +112,6 @@ public class Tiling : MonoBehaviour {
                 return offsetY;
             }
 
-        } else
-        {
-            return 0;
-        }
+        } 
     }
 }

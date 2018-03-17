@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour {
 
     Controller2D controller;
 
+
+
     public float jumpX = 1f;
     public float JumpHeight = 4f;
     public float timeToJumpApex = .4f;
@@ -22,7 +24,9 @@ public class PlayerMovement : MonoBehaviour {
     float gravity;
     float jumpVelocity;
     float velocityXSmoothing;
-   
+    int stepCount;
+
+    Text stepText;
 
     Vector2 input;
     Vector3 velocity;
@@ -32,6 +36,8 @@ public class PlayerMovement : MonoBehaviour {
         step = speed * Time.deltaTime;
 
         controller = GetComponent<Controller2D>();
+        GameObject numberOfStep = GameObject.FindGameObjectWithTag("NumberOfStep");
+        stepText = numberOfStep.GetComponent<Text>();
         GameObject moveButton = GameObject.FindGameObjectWithTag("JumpButton");
         Button bnt = moveButton.GetComponent<Button>();
         bnt.onClick.AddListener(Jump);
@@ -41,7 +47,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         CalculateGravity();
 
-
+        stepText.text = stepCount.ToString();
 
         if(controller.collisions.above || controller.collisions.below)
         {
@@ -76,6 +82,7 @@ public class PlayerMovement : MonoBehaviour {
     void Jump(){
         if (controller.collisions.below)
         {
+            stepCount++;
             newPosition = new Vector3(transform.position.x + 2, transform.position.y, transform.position.z);
             startMove = true;
             velocity.y = jumpVelocity;
