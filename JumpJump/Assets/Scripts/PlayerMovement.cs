@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour {
 
 
-
-
-    public float smoothing = 1f;
+    //public float smoothing = 1f;
+    public float speed = 5;
+    float step;
+    bool startMove = false;
+    Vector3 newPosition;
 
     Controller2D controller;
 
@@ -20,12 +22,15 @@ public class PlayerMovement : MonoBehaviour {
     float gravity;
     float jumpVelocity;
     float velocityXSmoothing;
+   
 
     Vector2 input;
     Vector3 velocity;
 
 	private void Awake()
 	{
+        step = speed * Time.deltaTime;
+
         controller = GetComponent<Controller2D>();
         GameObject moveButton = GameObject.FindGameObjectWithTag("JumpButton");
         Button bnt = moveButton.GetComponent<Button>();
@@ -43,8 +48,19 @@ public class PlayerMovement : MonoBehaviour {
             velocity.y = 0;
         }
 
-        float targetVelocity = input.x;
-        velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocity, ref velocityXSmoothing, .1f);
+        if (startMove)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, newPosition, step);
+
+        }
+
+        if(transform.position == newPosition)
+        {
+            startMove = false;
+        }
+
+        //float targetVelocity = input.x;
+        //velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocity, ref velocityXSmoothing, .1f);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
@@ -60,8 +76,10 @@ public class PlayerMovement : MonoBehaviour {
     void Jump(){
         if (controller.collisions.below)
         {
+            newPosition = new Vector3(transform.position.x + 2, transform.position.y, transform.position.z);
+            startMove = true;
             velocity.y = jumpVelocity;
-            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z), smoothing * Time.deltaTime);
+            //transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z), smoothing * Time.deltaTime);
             //velocity.x = jumpX;
             controller.Move(velocity * Time.deltaTime);
             Debug.Log("jump");

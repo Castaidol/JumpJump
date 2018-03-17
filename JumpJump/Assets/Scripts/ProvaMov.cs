@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class ProvaMov : MonoBehaviour {
 
+
+    //public float smoothing = 1f;
+    public float speed = 5;
+    float step;
+    Vector3 newPosition;
+    bool move = false;
+
+	private void Start()
+	{
+        step = speed * Time.deltaTime;
+        newPosition = new Vector3(transform.position.x + 2, transform.position.y, transform.position.z);
+	}
+
 	
-    public float smoothing = 1f;
 	
-	// Update is called once per frame
 	void FixedUpdate () {
 
         if(Input.GetKeyDown(KeyCode.Space))
@@ -15,10 +26,27 @@ public class ProvaMov : MonoBehaviour {
             Move();  
         }
 
+        if(move){
+            transform.position = Vector3.MoveTowards(transform.position, newPosition, step);
+        }
+
 	}
 
     void Move()
     {
-        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z), smoothing * Time.deltaTime);
+        move = true;
+        //transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z), smoothing * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(transform.position, newPosition , step);
     }
 }
+
+
+/*
+public Transform target;
+public float speed;
+void Update()
+{
+    float step = speed * Time.deltaTime;
+    transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+}
+}*/
