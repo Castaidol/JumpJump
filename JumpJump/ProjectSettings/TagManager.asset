@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - JumpButton
+  - NumberOfStep
   layers:
   - Default
   - TransparentFX

@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour {
         if (startMove)
         {
             transform.position = Vector3.MoveTowards(transform.position, newPosition, step);
+            Debug.Log(transform.position = Vector3.MoveTowards(transform.position, newPosition, step));
 
         }
 
@@ -65,8 +66,8 @@ public class PlayerMovement : MonoBehaviour {
             startMove = false;
         }
 
-        //float targetVelocity = input.x;
-        //velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocity, ref velocityXSmoothing, .1f);
+        float targetVelocity = input.x;
+        velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocity, ref velocityXSmoothing, .1f);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 

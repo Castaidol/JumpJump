@@ -6,6 +6,7 @@ public class Tiling : MonoBehaviour {
 
     public int offsetX = 2;
     public GameObject tile;
+    public GameObject[] specialTiles;
     public float maxPositionTileY = 2;
     public float minPositionTileY = -4;
 
@@ -18,6 +19,7 @@ public class Tiling : MonoBehaviour {
     private float tileWidth = 0f;
     private Camera cam;
     private Transform myTransform;
+    private GameObject tileToInstantiate;
 
 	private void Awake()
 	{
@@ -47,8 +49,18 @@ public class Tiling : MonoBehaviour {
 
     void MakeANewTile(float offsety){
 
+        float r = Random.Range(0, 100);
+
+        if (r <= 65)
+        {
+            tileToInstantiate = tile;
+        }else
+        {
+            tileToInstantiate = specialTiles[Random.Range(0, specialTiles.Length - 1)];
+        }
+
         Vector3 newPosition = new Vector3(myTransform.position.x + tileWidth, myTransform.position.y + offsety, myTransform.position.z);
-        Instantiate(tile, newPosition, Quaternion.identity);
+        Instantiate(tileToInstantiate, newPosition, Quaternion.identity);
     }
 
     void CheckPositionTile()
