@@ -31,6 +31,7 @@ public class Tiling : MonoBehaviour {
 	{
         BoxCollider2D tileBoxCollider = GetComponent<BoxCollider2D>();
         tileWidth = tileBoxCollider.bounds.size.x;
+        Debug.Log(specialTiles.Length);
 	}
 
 	void Update () {
@@ -56,7 +57,9 @@ public class Tiling : MonoBehaviour {
             tileToInstantiate = tile;
         }else
         {
-            tileToInstantiate = specialTiles[Random.Range(0, specialTiles.Length - 1)];
+            int n = Random.Range(0, specialTiles.Length);
+            tileToInstantiate = specialTiles[n];
+            Debug.Log(n);
         }
 
         Vector3 newPosition = new Vector3(myTransform.position.x + tileWidth, myTransform.position.y + offsety, myTransform.position.z);

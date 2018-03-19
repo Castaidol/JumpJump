@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour {
 
 
-    //public float smoothing = 1f;
     public float speed = 5;
     float step;
     bool startMove = false;
@@ -15,9 +14,6 @@ public class PlayerMovement : MonoBehaviour {
 
     Controller2D controller;
 
-
-
-    public float jumpX = 1f;
     public float JumpHeight = 4f;
     public float timeToJumpApex = .4f;
 
@@ -57,7 +53,6 @@ public class PlayerMovement : MonoBehaviour {
         if (startMove)
         {
             transform.position = Vector3.MoveTowards(transform.position, newPosition, step);
-            Debug.Log(transform.position = Vector3.MoveTowards(transform.position, newPosition, step));
 
         }
 
@@ -87,9 +82,11 @@ public class PlayerMovement : MonoBehaviour {
             newPosition = new Vector3(transform.position.x + 2, transform.position.y, transform.position.z);
             startMove = true;
             velocity.y = jumpVelocity;
-            //transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z), smoothing * Time.deltaTime);
-            //velocity.x = jumpX;
+            //velocity.x = newPosition.x;
             controller.Move(velocity * Time.deltaTime);
+           
+           
+
             Debug.Log("jump");
         }
     }

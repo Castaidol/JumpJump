@@ -241,6 +241,7 @@ MonoBehaviour:
   tile: {fileID: 1111066612848168}
   specialTiles:
   - {fileID: 1486270928882718, guid: 893569ee464f24cc4bf7ed02501f73a1, type: 2}
+  - {fileID: 1509789994942652, guid: a54827c3decc24d4697544ae5e767b90, type: 2}
   maxPositionTileY: 2
   minPositionTileY: -4
 --- !u!114 &114418815824570034

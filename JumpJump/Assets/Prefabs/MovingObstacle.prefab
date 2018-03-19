@@ -434,7 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   localWaypoints:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 4, z: 0}
+  - {x: 0, y: 7, z: 0}
   speed: 2
   waitTime: 0.4
   easeAmount: 1
@@ -453,6 +453,7 @@ MonoBehaviour:
   tile: {fileID: 1111066612848168, guid: 4bf58e34bbe214b06b48440b6df941f9, type: 2}
   specialTiles:
   - {fileID: 1486270928882718}
+  - {fileID: 1509789994942652, guid: a54827c3decc24d4697544ae5e767b90, type: 2}
   maxPositionTileY: 2
   minPositionTileY: -4
 --- !u!114 &114837318024189886

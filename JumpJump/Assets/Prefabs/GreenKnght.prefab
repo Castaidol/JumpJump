@@ -1443,7 +1443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  jumpX: 20
   JumpHeight: 5
   timeToJumpApex: 0.25
 --- !u!114 &114298062393828402
