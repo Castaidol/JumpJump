@@ -57,9 +57,7 @@ public class Tiling : MonoBehaviour {
             tileToInstantiate = tile;
         }else
         {
-            int n = Random.Range(0, specialTiles.Length);
-            tileToInstantiate = specialTiles[n];
-            Debug.Log(n);
+            tileToInstantiate = specialTiles[Random.Range(0, specialTiles.Length)];
         }
 
         Vector3 newPosition = new Vector3(myTransform.position.x + tileWidth, myTransform.position.y + offsety, myTransform.position.z);

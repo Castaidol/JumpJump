@@ -54,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4193394217185668}
   - component: {fileID: 114567648349981436}
+  - component: {fileID: 58320608773237252}
   m_Layer: 8
   m_Name: Bottom
   m_TagString: Untagged
@@ -103,6 +104,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4697254836415726}
+  - component: {fileID: 58024800966106104}
   m_Layer: 8
   m_Name: T3
   m_TagString: Untagged
@@ -138,6 +140,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4171398295173848}
+  - component: {fileID: 58780102585601230}
   m_Layer: 8
   m_Name: T2
   m_TagString: Untagged
@@ -169,6 +172,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4580970229983228}
+  - component: {fileID: 58010978316371778}
   m_Layer: 8
   m_Name: T4
   m_TagString: Untagged
@@ -184,6 +188,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4057297544471754}
+  - component: {fileID: 58507862393843196}
   m_Layer: 8
   m_Name: T1
   m_TagString: Untagged
@@ -201,6 +206,7 @@ GameObject:
   - component: {fileID: 4462996432385392}
   - component: {fileID: 212777299526302132}
   - component: {fileID: 114485016651936380}
+  - component: {fileID: 58469039165500474}
   m_Layer: 8
   m_Name: FallingStone
   m_TagString: Untagged
@@ -350,7 +356,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509789994942652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -10.998077, y: 2.4978447, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4193394217185668}
@@ -375,6 +381,96 @@ Transform:
   m_Father: {fileID: 4580970229983228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58010978316371778
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683081885644526}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5, y: 0.83}
+  serializedVersion: 2
+  m_Radius: 0.75
+--- !u!58 &58024800966106104
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1500554607719848}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.5, y: 0.81}
+  serializedVersion: 2
+  m_Radius: 0.75
+--- !u!58 &58320608773237252
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325617436516942}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.33}
+  serializedVersion: 2
+  m_Radius: 0.75
+--- !u!58 &58469039165500474
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1961237259540904}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.27}
+  serializedVersion: 2
+  m_Radius: 0.63
+--- !u!58 &58507862393843196
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1835876303728268}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.5, y: -0.16}
+  serializedVersion: 2
+  m_Radius: 0.75
+--- !u!58 &58780102585601230
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1520951610503050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5, y: -0.17}
+  serializedVersion: 2
+  m_Radius: 0.75
 --- !u!58 &58879751424820752
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -387,7 +483,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1}
+  m_Offset: {x: 0, y: 0.36}
   serializedVersion: 2
   m_Radius: 0.75
 --- !u!61 &61093751769139392
@@ -444,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8911935bd30e4593bb448b2211eaee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingSpeed: 1
+  fallingSpeed: 0.5
   secondToWait: 2.2
 --- !u!114 &114366063873556468
 MonoBehaviour:

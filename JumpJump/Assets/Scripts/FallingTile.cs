@@ -11,11 +11,6 @@ public class FallingTile : MonoBehaviour {
 
 	private void Update()
 	{
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(WaitBeforeFall(secondToWait));
-        }
-
         if(canFall)
         {
             transform.Translate(Vector3.down * fallingSpeed);
@@ -28,4 +23,8 @@ public class FallingTile : MonoBehaviour {
         canFall = true;
     }
 
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+        StartCoroutine(WaitBeforeFall(secondToWait));
+	}
 }

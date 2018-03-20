@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingObstacle : MonoBehaviour {
+public class MovingObstacle : MonoBehaviour
+{
 
     public Vector3[] localWaypoints;
     public float speed;
@@ -18,9 +19,9 @@ public class MovingObstacle : MonoBehaviour {
 
     Transform parentPosition;
 
-	// Use this for initialization
-	void Start () {
-		
+    // Use this for initialization
+    void Start()
+    {
         parentPosition = GetComponentInParent<Transform>();
         globalWaypoints = new Vector3[localWaypoints.Length];
         for (int i = 0; i < globalWaypoints.Length; i++)
@@ -28,13 +29,14 @@ public class MovingObstacle : MonoBehaviour {
             globalWaypoints[i] = localWaypoints[i] + parentPosition.position;
         }
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
         transform.Translate(CalculateObstacleMovement());
-	}
+    }
 
     float Ease(float x)
     {
@@ -44,7 +46,7 @@ public class MovingObstacle : MonoBehaviour {
 
     Vector3 CalculateObstacleMovement()
     {
-        if(Time.time < nextMoveTime)
+        if (Time.time < nextMoveTime)
         {
             return Vector3.zero;
         }
@@ -57,12 +59,12 @@ public class MovingObstacle : MonoBehaviour {
 
         Vector3 newPosition = Vector3.Lerp(globalWaypoints[fromWaypointIndex], globalWaypoints[toWaypointIndex], easedPercentBetweenWaypoint);
 
-        if(percentBetweenWaypoint >= 1)
+        if (percentBetweenWaypoint >= 1)
         {
             percentBetweenWaypoint = 0;
             fromWaypointIndex++;
 
-            if(fromWaypointIndex >= globalWaypoints.Length - 1)
+            if (fromWaypointIndex >= globalWaypoints.Length - 1)
             {
                 fromWaypointIndex = 0;
                 System.Array.Reverse(globalWaypoints);
@@ -74,8 +76,8 @@ public class MovingObstacle : MonoBehaviour {
         return newPosition - parentPosition.position;
     }
 
-	private void OnDrawGizmos()
-	{
+    private void OnDrawGizmos()
+    {
         parentPosition = GetComponentInParent<Transform>();
         if (localWaypoints != null)
         {
@@ -84,10 +86,17 @@ public class MovingObstacle : MonoBehaviour {
 
             for (int i = 0; i < localWaypoints.Length; i++)
             {
-                Vector3 globalWaypointsPos = (Application.isPlaying)? globalWaypoints[i] : localWaypoints[i] + parentPosition.position;
+                Vector3 globalWaypointsPos = (Application.isPlaying) ? globalWaypoints[i] : localWaypoints[i] + parentPosition.position;
                 Gizmos.DrawLine(globalWaypointsPos - Vector3.up * size, globalWaypointsPos + Vector3.up * size);
                 Gizmos.DrawLine(globalWaypointsPos - Vector3.left * size, globalWaypointsPos + Vector3.left * size);
             }
         }
-	}
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("qualcosa e entrato");
+        CharMovement player =  collision.GetComponent<CharMovement>();
+        player.healt--;
+    }
 }

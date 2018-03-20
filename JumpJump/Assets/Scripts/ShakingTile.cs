@@ -7,13 +7,6 @@ public class ShakingTile : MonoBehaviour {
     public float magnitude = 0.3f;
     public float shakingTime = 1.5f;
 
-	void Update () {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(Shake(shakingTime, magnitude));
-        }
-	}
-
     public IEnumerator Shake(float duration, float magnitude)
     {
         Vector3 originalPosition = transform.localPosition;
@@ -32,4 +25,9 @@ public class ShakingTile : MonoBehaviour {
         }
         transform.localPosition = originalPosition;
     }
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+        StartCoroutine(Shake(shakingTime, magnitude));
+	}
 }
