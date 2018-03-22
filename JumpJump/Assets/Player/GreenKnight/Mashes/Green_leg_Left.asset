@@ -13,16 +13,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ApiVersion: 3
   m_Sprite: {fileID: 21300000, guid: dbe073b755dd44645a09969ee37c4cc6, type: 3}
-  m_SharedMesh: {fileID: 43336177573049744}
+  m_SharedMesh: {fileID: 43784552976704164}
   m_SharedMaterials:
-  - {fileID: 21410238982930614}
+  - {fileID: 21030717580025718}
   pivotPoint: {x: 0, y: 0}
   texVertices: []
   edges: []
   holes: []
   indices: 
   bindPoses: []
---- !u!21 &21410238982930614
+--- !u!21 &21030717580025718
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -55,7 +55,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!43 &43336177573049744
+--- !u!43 &43784552976704164
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -79,14 +79,14 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: -0.0050165765
-    e01: -0.9999874
+  - e00: 0.2585449
+    e01: -0.9659995
     e02: 0
-    e03: 0.09271473
-    e10: 0.9999874
-    e11: -0.0050165765
+    e03: 0.108659215
+    e10: 0.9659995
+    e11: 0.2585449
     e12: 0
-    e13: 0.004968159
+    e13: -0.0101571735
     e20: 0
     e21: 0
     e22: 1
@@ -95,14 +95,14 @@ Mesh:
     e31: 0
     e32: 0
     e33: 1
-  - e00: -0.22272584
-    e01: -0.97488105
+  - e00: -0.13981402
+    e01: -0.990178
     e02: 0
-    e03: 0.0015670405
-    e10: 0.97488105
-    e11: -0.22272584
+    e03: -0.0062384545
+    e10: 0.990178
+    e11: -0.13981402
     e12: 0
-    e13: 0.0054404153
+    e13: -0.013687166
     e20: 0
     e21: 0
     e22: 1
@@ -128,12 +128,12 @@ Mesh:
     boneIndex[1]: 0
     boneIndex[2]: 0
     boneIndex[3]: 0
-  - weight[0]: 0.8605265
-    weight[1]: 0.13947345
+  - weight[0]: 1
+    weight[1]: 0
     weight[2]: 0
     weight[3]: 0
     boneIndex[0]: 0
-    boneIndex[1]: 1
+    boneIndex[1]: 0
     boneIndex[2]: 0
     boneIndex[3]: 0
   - weight[0]: 1
@@ -237,7 +237,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 320
-    _typelessdata: b1a9aa3ceee8953d000000000000000000000000000080bf2966343d4df48b3c000000000000000000000000000080bf3351223db18d643d000000000000000000000000000080bfaea5ac3c1a6752bd000000000000000000000000000080bf337b06ba475895bd000000000000000000000000000080bf9a5920399679963d000000000000000000000000000080bf1ae071bcefe895bd000000000000000000000000000080bf66eb38bd94ab3a3d000000000000000000000000000080bfec6900bded3970bd000000000000000000000000000080bff104353d66993b3d000000000000000000000000000080bf08a8393fd20a7f3f2ae4793fbea61d3f7dac6d3f3ed8603fa6533a3f9c621b3e1329fd3ef3e1b73b586c003f69857f3f0c49ae3e272d753bea7a433cfa184f3f90ef243e75acd13d734f7a3fbf7d4f3f
+    _typelessdata: b1a9aa3ceee8953d000000000000000000000000000080bf2966343d4df48b3c000000000000000000000000000080bf3351223db18d643d000000000000000000000000000080bfaea5ac3c1a6752bd000000000000000000000000000080bf337b06ba475895bd000000000000000000000000000080bf9a5920399679963d000000000000000000000000000080bf1ae071bcefe895bd000000000000000000000000000080bf66eb38bd94ab3a3d000000000000000000000000000080bfec6900bdec3970bd000000000000000000000000000080bff104353d66993b3d000000000000000000000000000080bf08a8393fd20a7f3f2ae4793fbea61d3f7dac6d3f3ed8603fa6533a3f9c621b3e1329fd3ee6e1b73b586c003f69857f3f0c49ae3e042d753bd07a433cfa184f3f90ef243e7aacd13d734f7a3fbf7d4f3f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -297,7 +297,7 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!114 &114219351496006374
+--- !u!114 &114904154730753934
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -314,11 +314,11 @@ MonoBehaviour:
   - {x: 36.117096, y: 36.333706}
   - {x: 34.351288, y: 51.819675}
   - {x: 26.930038, y: 8.952858}
-  - {x: 18.294798, y: 0.33108747}
+  - {x: 18.294798, y: 0.3310871}
   - {x: 18.561169, y: 58.889637}
-  - {x: 12.594839, y: 0.22072458}
-  - {x: 0.44145292, y: 47.729515}
-  - {x: 5.959594, y: 6.0404034}
+  - {x: 12.594839, y: 0.2207241}
+  - {x: 0.44145203, y: 47.729515}
+  - {x: 5.959594, y: 6.0404053}
   - {x: 36.177666, y: 47.820236}
   m_BoneWeights:
   - weight0: 1
@@ -329,12 +329,12 @@ MonoBehaviour:
     boneIndex1: -1
     boneIndex2: -1
     boneIndex3: -1
-  - weight0: 0.8605265
-    weight1: 0.13947345
+  - weight0: 1
+    weight1: 0
     weight2: 0
     weight3: 0
     boneIndex0: 0
-    boneIndex1: 1
+    boneIndex1: -1
     boneIndex2: -1
     boneIndex3: -1
   - weight0: 1
@@ -402,38 +402,38 @@ MonoBehaviour:
     boneIndex2: -1
     boneIndex3: -1
   m_Edges:
-  - index1: 8
-    index2: 7
   - index1: 5
-    index2: 7
-  - index1: 8
-    index2: 6
-  - index1: 0
-    index2: 5
+    index2: 0
   - index1: 4
     index2: 6
-  - index1: 2
-    index2: 0
+  - index1: 8
+    index2: 6
+  - index1: 3
+    index2: 1
+  - index1: 7
+    index2: 5
+  - index1: 9
+    index2: 1
+  - index1: 7
+    index2: 8
   - index1: 3
     index2: 4
-  - index1: 1
-    index2: 3
+  - index1: 0
+    index2: 2
   - index1: 2
-    index2: 9
-  - index1: 1
     index2: 9
   m_Holes: []
   m_Indices: 080000000400000006000000010000000700000005000000070000000300000008000000030000000400000008000000090000000100000005000000050000000000000002000000020000000900000005000000030000000700000001000000
   m_BindPoses:
   - bindPose:
-      e00: -0.0050165765
-      e01: -0.9999874
+      e00: 0.2585449
+      e01: -0.9659995
       e02: 0
-      e03: 0.09271473
-      e10: 0.9999874
-      e11: -0.0050165765
+      e03: 0.108659215
+      e10: 0.9659995
+      e11: 0.2585449
       e12: 0
-      e13: 0.004968159
+      e13: -0.0101571735
       e20: 0
       e21: 0
       e22: 1
@@ -442,20 +442,20 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.09000016
-    path: L_leg
-    name: L_leg
+    boneLength: 0.1197533
+    path: Left_Leg
+    name: Left_Leg
     color: {r: 1, g: 0, b: 0, a: 1}
     zOrder: 0
   - bindPose:
-      e00: -0.22272584
-      e01: -0.97488105
+      e00: -0.13981402
+      e01: -0.990178
       e02: 0
-      e03: 0.0015670405
-      e10: 0.97488105
-      e11: -0.22272584
+      e03: -0.0062384545
+      e10: 0.990178
+      e11: -0.13981402
       e12: 0
-      e13: 0.0054404153
+      e13: -0.013687166
       e20: 0
       e21: 0
       e22: 1
@@ -464,9 +464,9 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.09
-    path: L_leg/L_foot
-    name: L_foot
+    boneLength: 0.091815904
+    path: Left_Leg/Left_Foot
+    name: Left_Foot
     color: {r: 1, g: 0.75, b: 0, a: 1}
     zOrder: 0
   m_Blendshapes: []

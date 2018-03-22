@@ -13,16 +13,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ApiVersion: 3
   m_Sprite: {fileID: 21300000, guid: 4b6981a2c5df6437f96b7f864f3ea158, type: 3}
-  m_SharedMesh: {fileID: 43251753852767632}
+  m_SharedMesh: {fileID: 43849930209866176}
   m_SharedMaterials:
-  - {fileID: 21950338308470464}
+  - {fileID: 21499923466895350}
   pivotPoint: {x: 0, y: 0}
   texVertices: []
   edges: []
   holes: []
   indices: 
   bindPoses: []
---- !u!21 &21950338308470464
+--- !u!21 &21499923466895350
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -55,7 +55,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!43 &43251753852767632
+--- !u!43 &43849930209866176
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -71,7 +71,7 @@ Mesh:
     firstVertex: 0
     vertexCount: 14
     localAABB:
-      m_Center: {x: 0.00022680685, y: 0.00068042055, z: 0}
+      m_Center: {x: 0.00022680685, y: 0.000680428, z: 0}
       m_Extent: {x: 0.08556959, y: 0.12056959, z: 0}
   m_Shapes:
     vertices: []
@@ -79,14 +79,14 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: -0.16222484
-    e01: -0.9867542
+  - e00: -0.21044046
+    e01: -0.9776069
     e02: 0
-    e03: 0.060682006
-    e10: 0.9867542
-    e11: -0.16222484
+    e03: 0.07380959
+    e10: 0.9776069
+    e11: -0.21044046
     e12: 0
-    e13: -0.006223116
+    e13: -0.025349775
     e20: 0
     e21: 0
     e22: 1
@@ -253,7 +253,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 448
-    _typelessdata: 94a1ea3cec51f83d000000000000000000000000000080bf52de353c7388f5bd000000000000000000000000000080bf05b6af3d4f92823d000000000000000000000000000080bfe49294bc7388f5bd000000000000000000000000000080bf585e33bdf6bbd83d000000000000000000000000000080bf32c8aebd0ade4a3d000000000000000000000000000080bf8decacbd29987e3c000000000000000000000000000080bf895a81bd85d2edbc000000000000000000000000000080bffcab34bd4082b0bd000000000000000000000000000080bfb8abd3bbf12ef63d000000000000000000000000000080bfd868873d973cce3d000000000000000000000000000080bfdf7c2a3dc183bdbd000000000000000000000000000080bf3fc58f3dbd83bdbc000000000000000000000000000080bf363a623daa1329bd000000000000000000000000000080bf72812a3fffff7f3f3d79103f34e2b73bab537f3f0e4e433f3e2bca3e34e2b73bad0b7c3efab76f3ffe55ac3b0f49343fe3552c3c7e67103fd60f093ea1b4c23e24287a3e7910143eb1d3ec3e0de67e3f741f623fbc4e6a3f5cc53d3f067ff23d782e683ff127cf3e69f7513fd5d8a83e
+    _typelessdata: 94a1ea3ced51f83d000000000000000000000000000080bf52de353c7288f5bd000000000000000000000000000080bf05b6af3d5192823d000000000000000000000000000080bfe49294bc7288f5bd000000000000000000000000000080bf585e33bdf7bbd83d000000000000000000000000000080bf32c8aebd0dde4a3d000000000000000000000000000080bf8decacbd33987e3c000000000000000000000000000080bf895a81bd80d2edbc000000000000000000000000000080bffcab34bd3d82b0bd000000000000000000000000000080bfb8abd3bbf22ef63d000000000000000000000000000080bfd868873d983cce3d000000000000000000000000000080bfdc7c2a3dc083bdbd000000000000000000000000000080bf3fc58f3db883bdbc000000000000000000000000000080bf333a623da61329bd000000000000000000000000000080bf72812a3fffff7f3f3d79103f4fe2b73bab537f3f0e4e433f3e2bca3e4fe2b73bad0b7c3efab76f3fcc55ac3b0f49343fcc552c3c7e67103fd70f093ea1b4c23e24287a3e7c10143eb1d3ec3e0de67e3f741f623fbc4e6a3f5bc53d3f077ff23d782e683ff127cf3e68f7513fd5d8a83e
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -307,13 +307,13 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0.00022680685, y: 0.00068042055, z: 0}
+    m_Center: {x: 0.00022680685, y: 0.000680428, z: 0}
     m_Extent: {x: 0.08556959, y: 0.12056959, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!114 &114295057132061246
+--- !u!114 &114871117888615616
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -324,22 +324,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e715ea371f114f4a8d2584ad476634d, type: 3}
   m_Name: Green_shoulders_Right_Data
   m_EditorClassIdentifier: 
-  m_PivotPoint: {x: 34.5, y: 48.5}
+  m_PivotPoint: {x: 34.5, y: 48.499996}
   m_Vertices:
   - {x: 45.9566, y: 97}
-  - {x: 38.940147, y: 0.5443332}
+  - {x: 38.940147, y: 0.5443344}
   - {x: 68.81856, y: 74.00225}
-  - {x: 27.24542, y: 0.5443332}
+  - {x: 27.24542, y: 0.5443344}
   - {x: 16.983541, y: 90.8309}
-  - {x: 0.36288995, y: 68.311264}
-  - {x: 0.7257781, y: 54.715683}
-  - {x: 9.235614, y: 36.88758}
-  - {x: 16.856268, y: 14.025627}
+  - {x: 0.36288834, y: 68.311264}
+  - {x: 0.7257767, y: 54.715683}
+  - {x: 9.235615, y: 36.88758}
+  - {x: 16.856268, y: 14.025631}
   - {x: 31.916128, y: 96.58269}
   - {x: 60.947178, y: 88.7806}
-  - {x: 51.149197, y: 11.485415}
+  - {x: 51.149193, y: 11.485416}
   - {x: 62.580173, y: 39.246357}
-  - {x: 56.592518, y: 31.988592}
+  - {x: 56.592514, y: 31.988594}
   m_BoneWeights:
   - weight0: 1
     weight1: 0
@@ -454,46 +454,46 @@ MonoBehaviour:
     boneIndex2: -1
     boneIndex3: -1
   m_Edges:
-  - index1: 6
-    index2: 5
-  - index1: 4
-    index2: 5
-  - index1: 1
-    index2: 3
+  - index1: 8
+    index2: 7
+  - index1: 13
+    index2: 11
+  - index1: 13
+    index2: 12
   - index1: 6
     index2: 7
-  - index1: 3
-    index2: 8
-  - index1: 7
-    index2: 8
-  - index1: 0
-    index2: 9
+  - index1: 11
+    index2: 1
+  - index1: 6
+    index2: 5
   - index1: 4
-    index2: 9
-  - index1: 2
-    index2: 10
-  - index1: 0
-    index2: 10
-  - index1: 1
-    index2: 11
+    index2: 5
   - index1: 2
     index2: 12
-  - index1: 11
-    index2: 13
-  - index1: 12
-    index2: 13
+  - index1: 9
+    index2: 4
+  - index1: 3
+    index2: 8
+  - index1: 3
+    index2: 1
+  - index1: 0
+    index2: 10
+  - index1: 2
+    index2: 10
+  - index1: 9
+    index2: 0
   m_Holes: []
   m_Indices: 08000000070000000d000000060000000c0000000700000004000000060000000500000006000000040000000c000000090000000200000004000000030000000800000001000000080000000d0000000b0000000d000000070000000c00000002000000000000000a00000009000000000000000200000004000000020000000c0000000b0000000100000008000000
   m_BindPoses:
   - bindPose:
-      e00: -0.16222484
-      e01: -0.9867542
+      e00: -0.21044046
+      e01: -0.9776069
       e02: 0
-      e03: 0.060682006
-      e10: 0.9867542
-      e11: -0.16222484
+      e03: 0.07380959
+      e10: 0.9776069
+      e11: -0.21044046
       e12: 0
-      e13: -0.006223116
+      e13: -0.025349775
       e20: 0
       e21: 0
       e22: 1
@@ -502,9 +502,9 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.20000097
-    path: Torso/R_arm
-    name: R_arm
+    boneLength: 0.20938265
+    path: Torso/Right_Arm
+    name: Right_Arm
     color: {r: 1, g: 0, b: 0, a: 1}
     zOrder: 0
   m_Blendshapes: []
