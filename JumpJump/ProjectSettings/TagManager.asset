@@ -6,6 +6,7 @@ TagManager:
   tags:
   - JumpButton
   - NumberOfStep
+  - Ground
   layers:
   - Default
   - TransparentFX
