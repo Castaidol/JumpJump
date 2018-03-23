@@ -14,4 +14,4 @@ MonoBehaviour:
   name: Verdone
   description: veveve
   knight: {fileID: 1015369939464512, guid: a2748385019654f2297df07285506eff, type: 2}
-  healt: 3
+  healt: 4
