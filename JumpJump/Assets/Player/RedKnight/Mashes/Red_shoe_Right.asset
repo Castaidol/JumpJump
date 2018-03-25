@@ -78,23 +78,7 @@ Mesh:
     shapes: []
     channels: []
     fullWeights: []
-  m_BindPose:
-  - e00: 0.045140404
-    e01: -0.99898106
-    e02: 0
-    e03: 0.07675121
-    e10: 0.99898106
-    e11: 0.045140404
-    e12: 0
-    e13: 0.0025417006
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
+  m_BindPose: []
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
   m_MeshCompression: 0
@@ -102,7 +86,7 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 040002000700070000000400060002000500040003000500030004000100020004000500
+  m_IndexBuffer: 030004000100070000000400020004000500040003000500040002000700060002000500
   m_Skin:
   - weight[0]: 1
     weight[1]: 0
@@ -370,27 +354,5 @@ MonoBehaviour:
     index2: 1
   m_Holes: []
   m_Indices: 040000000200000007000000070000000000000004000000060000000200000005000000040000000300000005000000030000000400000001000000020000000400000005000000
-  m_BindPoses:
-  - bindPose:
-      e00: 0.045140404
-      e01: -0.99898106
-      e02: 0
-      e03: 0.07675121
-      e10: 0.99898106
-      e11: 0.045140404
-      e12: 0
-      e13: 0.0025417006
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    boneLength: 0.09
-    path: R_leg/R_Foot
-    name: R_Foot
-    color: {r: 1, g: 0, b: 0, a: 1}
-    zOrder: 0
+  m_BindPoses: []
   m_Blendshapes: []

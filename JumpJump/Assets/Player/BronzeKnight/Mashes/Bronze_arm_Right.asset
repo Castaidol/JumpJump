@@ -13,16 +13,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ApiVersion: 3
   m_Sprite: {fileID: 21300000, guid: 4ff1062c53b754a8d99b12a6f72f7c17, type: 3}
-  m_SharedMesh: {fileID: 43366129327157058}
+  m_SharedMesh: {fileID: 43797233547382506}
   m_SharedMaterials:
-  - {fileID: 21590960194810778}
+  - {fileID: 21489961877183386}
   pivotPoint: {x: 0, y: 0}
   texVertices: []
   edges: []
   holes: []
   indices: 
   bindPoses: []
---- !u!21 &21590960194810778
+--- !u!21 &21489961877183386
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -55,7 +55,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!43 &43366129327157058
+--- !u!43 &43797233547382506
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -65,14 +65,14 @@ Mesh:
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 30
+    indexCount: 18
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 12
+    vertexCount: 8
     localAABB:
-      m_Center: {x: -0.0006441325, y: -0.0007125139, z: 0}
-      m_Extent: {x: 0.22935587, y: 0.37071252, z: 0}
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.0575, y: 0.0925, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -86,40 +86,8 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 01000a0002000b00040000000700010009000900030005000a0001000700000008000a00080002000a000b0000000a0004000b000600090005000700
+  m_IndexBuffer: 020001000000010003000000000003000400030005000400040005000600070006000500
   m_Skin:
-  - weight[0]: 0
-    weight[1]: 0
-    weight[2]: 0
-    weight[3]: 0
-    boneIndex[0]: 0
-    boneIndex[1]: 0
-    boneIndex[2]: 0
-    boneIndex[3]: 0
-  - weight[0]: 0
-    weight[1]: 0
-    weight[2]: 0
-    weight[3]: 0
-    boneIndex[0]: 0
-    boneIndex[1]: 0
-    boneIndex[2]: 0
-    boneIndex[3]: 0
-  - weight[0]: 0
-    weight[1]: 0
-    weight[2]: 0
-    weight[3]: 0
-    boneIndex[0]: 0
-    boneIndex[1]: 0
-    boneIndex[2]: 0
-    boneIndex[3]: 0
-  - weight[0]: 0
-    weight[1]: 0
-    weight[2]: 0
-    weight[3]: 0
-    boneIndex[0]: 0
-    boneIndex[1]: 0
-    boneIndex[2]: 0
-    boneIndex[3]: 0
   - weight[0]: 0
     weight[1]: 0
     weight[2]: 0
@@ -186,7 +154,7 @@ Mesh:
     boneIndex[3]: 0
   m_VertexData:
     m_CurrentChannels: 11
-    m_VertexCount: 12
+    m_VertexCount: 8
     m_Channels:
     - stream: 0
       offset: 0
@@ -220,8 +188,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 384
-    _typelessdata: d267f33de48c683e000000000000000000000000000080bf7d58383ec57967be000000000000000000000000000080bf920f6a3e21cb81bd000000000000000000000000000080bf38f4ac3d6c2bbebe000000000000000000000000000080bf856e52bd8fd2a63e000000000000000000000000000080bfe10e3ebc16fbbbbe000000000000000000000000000080bf1f856bbea470bd3e000000000000000000000000000080bfb87cf0bdefc47fbe000000000000000000000000000080bf69336a3e76f8a13d000000000000000000000000000080bff6cf0c3ee255a2be000000000000000000000000000080bfca6c3ebe8ab487bd000000000000000000000000000080bf167261be7b8d663d000000000000000000000000000080bf9024423f77904e3f1830643ff031473efc347f3f9f26d43e95ff2e3ffd66fcba46d1c63ec9b7703fa416f33e9e667c3b000000000000803fd4997a3ea85d263e77487f3f225c1b3f49874c3fcb82923dbd10c43d5527d23ecb34af3cec78133f
+    m_DataSize: 256
+    _typelessdata: 1f856b3d3d0a573d000000000000000000000000000080bf5c8f423dec51b8bd000000000000000000000000000080bf1f856b3d713d8abd000000000000000000000000000080bf9a99193da470bdbd000000000000000000000000000080bf8fc2f5bba470bd3d000000000000000000000000000080bf09d7a3bca470bdbd000000000000000000000000000080bf1f856bbda470bd3d000000000000000000000000000080bf1f856bbd0ad723bd000000000000000000000000000080bf0000803f0ea6483f38bd693fc9675d3c0000803fdc600a3e707a533f00000000d49bde3e0000803fe0f4a63e00000000000000000000803f000000001c4c913e
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -275,13 +243,13 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: -0.0006441325, y: -0.0007125139, z: 0}
-    m_Extent: {x: 0.22935587, y: 0.37071252, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.0575, y: 0.0925, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!114 &114894996090074028
+--- !u!114 &114252541037879896
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -294,116 +262,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PivotPoint: {x: 23, y: 37}
   m_Vertices:
-  - {x: 34.885036, y: 59.709995}
-  - {x: 41.002506, y: 14.394956}
-  - {x: 45.857502, y: 30.662428}
-  - {x: 31.445019, y: -0.14250007}
-  - {x: 17.862507, y: 69.58252}
-  - {x: 21.839977, y: 0.2849985}
+  - {x: 46, y: 58}
+  - {x: 42, y: 1}
+  - {x: 46, y: 9.999998}
+  - {x: 38, y: 0}
+  - {x: 20, y: 74}
+  - {x: 15.000001, y: 0}
   - {x: 0, y: 74}
-  - {x: 11.257462, y: 12.0225315}
-  - {x: 45.871174, y: 44.90872}
-  - {x: 36.751205, y: 5.2938514}
-  - {x: 4.4038124, y: 30.373768}
-  - {x: 0.98382396, y: 42.628727}
-  m_BoneWeights:
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
-  - weight0: 0
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: -1
-    boneIndex1: -1
-    boneIndex2: -1
-    boneIndex3: -1
+  - {x: 0, y: 21}
+  m_BoneWeights: []
   m_Edges:
+  - index1: 7
+    index2: 6
   - index1: 4
     index2: 6
   - index1: 7
@@ -413,22 +283,12 @@ MonoBehaviour:
   - index1: 3
     index2: 5
   - index1: 2
-    index2: 1
-  - index1: 2
-    index2: 8
-  - index1: 0
-    index2: 8
+    index2: 0
   - index1: 1
-    index2: 9
-  - index1: 3
-    index2: 9
-  - index1: 7
-    index2: 10
-  - index1: 6
-    index2: 11
-  - index1: 10
-    index2: 11
+    index2: 3
+  - index1: 2
+    index2: 1
   m_Holes: []
-  m_Indices: 0b000000000000000a0000000a0000000100000007000000040000000b000000060000000b0000000400000000000000090000000500000007000000070000000100000009000000010000000a0000000200000000000000080000000a00000008000000020000000a000000090000000300000005000000
+  m_Indices: 070000000600000005000000040000000500000006000000030000000500000004000000000000000300000004000000010000000300000000000000020000000100000000000000
   m_BindPoses: []
   m_Blendshapes: []
