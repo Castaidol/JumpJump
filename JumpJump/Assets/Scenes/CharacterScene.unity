@@ -549,7 +549,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 21676050873165396, guid: b3564e9a2f62841a3b4c10ca635e6d0c,
+      objectReference: {fileID: 21609570915338664, guid: b79ded1869608402eb7e83dbbd1fa6ea,
         type: 2}
     - target: {fileID: 137143862083614932, guid: a2748385019654f2297df07285506eff,
         type: 2}
@@ -785,7 +785,7 @@ Prefab:
         type: 2}
       propertyPath: m_SpriteMesh
       value: 
-      objectReference: {fileID: 11400000, guid: b3564e9a2f62841a3b4c10ca635e6d0c,
+      objectReference: {fileID: 11400000, guid: b79ded1869608402eb7e83dbbd1fa6ea,
         type: 2}
     - target: {fileID: 4823416901124220, guid: a2748385019654f2297df07285506eff, type: 2}
       propertyPath: m_RootOrder
@@ -830,7 +830,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4033633568861242, guid: a2748385019654f2297df07285506eff, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4566631511818162, guid: a2748385019654f2297df07285506eff, type: 2}
       propertyPath: m_RootOrder
@@ -847,6 +847,16 @@ Prefab:
     - target: {fileID: 1675847476099728, guid: a2748385019654f2297df07285506eff, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61992033647904104, guid: a2748385019654f2297df07285506eff,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.38721284
+      objectReference: {fileID: 0}
+    - target: {fileID: 61992033647904104, guid: a2748385019654f2297df07285506eff,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.0150902
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a2748385019654f2297df07285506eff, type: 2}

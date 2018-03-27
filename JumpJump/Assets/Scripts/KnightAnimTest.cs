@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KnightAnimTest : MonoBehaviour {
 
+    bool isSelected = true;
 
     Rigidbody2D rb2D;
     Animator anim;
@@ -12,7 +13,11 @@ public class KnightAnimTest : MonoBehaviour {
     Vector3 jumpVelocity;
     Vector3 startingPos;
 
+    float skinWidth = 0.015f;
+
     public float jumpForce = 5;
+    public int rayCount = 4;
+    float raySpacing; 
 
     public bool isTheGameStarted = false;
 
@@ -29,6 +34,11 @@ public class KnightAnimTest : MonoBehaviour {
 	
 
 	void Update () {
+
+        if(isSelected)
+        {
+            anim.SetBool("IsSelected", true);
+        }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
@@ -47,11 +57,5 @@ public class KnightAnimTest : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter(Collision collision)
-	{
-        Debug.Log("son terra");
-        if (collision.transform.tag == "Ground")
-            isGrounded = true;
 
-	}
 }
