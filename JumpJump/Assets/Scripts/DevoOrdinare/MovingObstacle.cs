@@ -19,7 +19,6 @@ public class MovingObstacle : MonoBehaviour
 
     Transform parentPosition;
 
-    // Use this for initialization
     void Start()
     {
         parentPosition = GetComponentInParent<Transform>();
@@ -28,13 +27,11 @@ public class MovingObstacle : MonoBehaviour
         {
             globalWaypoints[i] = localWaypoints[i] + parentPosition.position;
         }
-
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
-
         transform.Translate(CalculateObstacleMovement());
     }
 

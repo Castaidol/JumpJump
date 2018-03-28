@@ -9,15 +9,17 @@ public class CharMovement : MonoBehaviour
     public int verticalRayCount = 4;
     public Text healtText;
     public LayerMask collisionMask;
-    float jumpForce = 10;
-    public float xForce;
+    public float jumpForce = 10;
+    public float jumpForwardForce = 2.045f;
     public int healt = 10;
 
     private float positionTileX;
     private float speed = 5f;
+    private bool canJump;
 
     private Rigidbody2D rb2D;
     private BoxCollider2D col2D;
+    private Animator anim;
 
     private Vector2 raycastOrigin;
     private float verticalRaySpacing;
@@ -32,6 +34,13 @@ public class CharMovement : MonoBehaviour
         CalculateRaycastSpacing();
         collisionInfo.Reset();
 
+        Button bnt = GameObject.FindGameObjectWithTag("JumpButton").GetComponent<Button>();
+        bnt.onClick.AddListener(Jump);
+
+	}
+	private void FixedUpdate()
+	{
+        canJump = false;
 	}
 
 	private void Update()
@@ -39,10 +48,9 @@ public class CharMovement : MonoBehaviour
         healtText.text = healt.ToString();
 
         VerticalCollision();
-
-        if(Input.GetKeyDown(KeyCode.UpArrow) && collisionInfo.below)
+        if(canJump && collisionInfo.below)
         {
-            Vector2 force = new Vector2(xForce, jumpForce);
+            Vector2 force = new Vector2(jumpForwardForce, jumpForce);
             rb2D.AddForce(force, ForceMode2D.Impulse);
             collisionInfo.Reset();
         }
@@ -63,17 +71,17 @@ public class CharMovement : MonoBehaviour
             if (hit.collider != null)
             {
                 positionTileX = hit.transform.position.x;
-                //Debug.Log(positionTileX);
             }
 
             if(hit)
             {
                 MoveToPosition();
 
-                if(transform.position.x == positionTileX) collisionInfo.below = true;
+                if(transform.position.x == positionTileX)
+                {
+                    collisionInfo.below = true;
+                }
             }
-
-           
         }
     }
 
@@ -95,6 +103,17 @@ public class CharMovement : MonoBehaviour
        
     }
 
+    void MoveToPosition()
+    {
+        float step = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(positionTileX, transform.position.y, transform.position.z), step);
+    }
+    
+    void Jump()
+    {
+        canJump = true;
+    }
+
     public struct CollisionInfo
     {
         public bool below;
@@ -104,11 +123,4 @@ public class CharMovement : MonoBehaviour
             below = false;
         }
     }
-
-    void MoveToPosition()
-    {
-        float step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(positionTileX, transform.position.y, transform.position.z), step);
-    }
-
 }

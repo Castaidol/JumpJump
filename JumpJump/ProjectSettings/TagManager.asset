@@ -8,6 +8,7 @@ TagManager:
   - NumberOfStep
   - Ground
   - Sword
+  - AttackButton
   layers:
   - Default
   - TransparentFX
