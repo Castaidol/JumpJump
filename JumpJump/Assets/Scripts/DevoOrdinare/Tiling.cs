@@ -31,7 +31,7 @@ public class Tiling : MonoBehaviour {
 	{
         BoxCollider2D tileBoxCollider = GetComponent<BoxCollider2D>();
         tileWidth = tileBoxCollider.bounds.size.x;
-        Debug.Log(specialTiles.Length);
+        //Debug.Log(specialTiles.Length);
 	}
 
 	void Update () {

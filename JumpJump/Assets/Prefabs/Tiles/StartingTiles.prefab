@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4713383484915976}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StartingTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

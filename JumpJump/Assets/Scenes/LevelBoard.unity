@@ -310,8 +310,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7135e16f00ae49b991a9945175a8ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  col2D: {fileID: 0}
   healtText: {fileID: 405279182}
+  xForce: 2.045
   healt: 10
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  verticalRayCount: 4
+  verticalRaySpacing: 0
+  raycastOrigin: {x: 0, y: 0}
 --- !u!23 &609583254
 MeshRenderer:
   m_ObjectHideFlags: 0
