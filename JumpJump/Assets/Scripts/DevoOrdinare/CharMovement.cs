@@ -45,7 +45,7 @@ public class CharMovement : MonoBehaviour
 
 	private void Update()
 	{
-        healtText.text = healt.ToString();
+        //healtText.text = healt.ToString();
 
         VerticalCollision();
         if(canJump && collisionInfo.below)

@@ -7,6 +7,7 @@ public class Knight : ScriptableObject {
 
     public new string name;
     public string description;
+    public int armorIndex;
 
     public GameObject knight;
 

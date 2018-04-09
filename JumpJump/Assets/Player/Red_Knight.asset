@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b47ab49df09842539748a71cedbcb6a, type: 3}
+  m_Name: Red_Knight
+  m_EditorClassIdentifier: 
+  name: Red
+  description: Bel Tempo si spera
+  armorIndex: 1
+  knight: {fileID: 1388251922213100, guid: 0de06fc4995bb4438b22aecc374e1f79, type: 2}
+  healt: 0
