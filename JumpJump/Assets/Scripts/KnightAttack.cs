@@ -12,8 +12,12 @@ public class KnightAttack : MonoBehaviour {
 	
 	void Start ()
     {
-        boxCol2D = GetComponent<BoxCollider2D>();
-        boxCol2D.enabled = false;
+        if(GetComponent<BoxCollider2D>() != null)
+        {
+            boxCol2D = GetComponent<BoxCollider2D>();
+            boxCol2D.enabled = false;
+        }
+
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
 
         btn = GameObject.FindGameObjectWithTag("AttackButton").GetComponent<Button>();
@@ -32,7 +36,7 @@ public class KnightAttack : MonoBehaviour {
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.8f);
         boxCol2D.enabled = false;
     }
 }

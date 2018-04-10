@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CharMovement : MonoBehaviour
 {
+    public GameObject dust;
+
     public const float skinWidth = 0.02f;
     public int verticalRayCount = 4;
     public Text healtText;
@@ -45,7 +47,7 @@ public class CharMovement : MonoBehaviour
 
 	private void Update()
 	{
-        //healtText.text = healt.ToString();
+        healtText.text = healt.ToString();
 
         VerticalCollision();
         if(canJump && collisionInfo.below)
@@ -79,7 +81,12 @@ public class CharMovement : MonoBehaviour
 
                 if(transform.position.x == positionTileX)
                 {
+                    if(collisionInfo.below == false)
+                    {
+                        if (dust != null) Instantiate(dust, new Vector3(hit.transform.position.x, hit.transform.position.y + 1, hit.transform.position.z), Quaternion.identity, hit.transform);
+                    }
                     collisionInfo.below = true;
+
                 }
             }
         }
