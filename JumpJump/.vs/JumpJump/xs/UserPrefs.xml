@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{F2C86690-93BE-43F3-0A08-ABAE2451ED7A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/KnightAttack.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DevoOrdinare/CharMovement.cs">
     <Files>
-      <File FileName="Assets/Scripts/DevoOrdinare/CharMovement.cs" Line="46" Column="23" />
-      <File FileName="Assets/Scripts/KnightAttack.cs" Line="35" Column="44" />
+      <File FileName="Assets/Scripts/DevoOrdinare/CharMovement.cs" Line="86" Column="192" />
+      <File FileName="Assets/Scripts/KnightAttack.cs" Line="39" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
