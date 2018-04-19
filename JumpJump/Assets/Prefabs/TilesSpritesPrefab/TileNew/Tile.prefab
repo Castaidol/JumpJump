@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1035082538891162}
+  m_IsPrefabParent: 1
+--- !u!1 &1035082538891162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4074467577341274}
+  - component: {fileID: 61475268841518202}
+  - component: {fileID: 114228713988401308}
+  - component: {fileID: 114960438723818168}
+  - component: {fileID: 114521979198554480}
+  m_Layer: 8
+  m_Name: Tile
+  m_TagString: Untagged
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4074467577341274
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1035082538891162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61475268841518202
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1035082538891162}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!114 &114228713988401308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1035082538891162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2be4e38128e49fdba9d44ed9bba1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 2
+  tile: {fileID: 1035082538891162}
+  specialTiles: []
+  maxPositionTileY: 2
+  minPositionTileY: -4
+--- !u!114 &114521979198554480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1035082538891162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c0fbd47bdf5444d9c7e8d9ea0e7373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomTile: {fileID: 1709581348911438, guid: 16329c23b39f645f286e997524c16aef, type: 2}
+  firstSectorTiles:
+  - {fileID: 1071108179696144, guid: ebf252e3964af496ba8fbe0bccad9efd, type: 2}
+  - {fileID: 1099058331155372, guid: 6e7b5be761b864deea08fe4e5efc1eec, type: 2}
+  - {fileID: 1744552535949426, guid: 0a23f40a16df4494893a2f104d3253b1, type: 2}
+  secondSectorTiles:
+  - {fileID: 1353561719977906, guid: 8947485e4a7c14862bd50a5a113a9554, type: 2}
+  - {fileID: 1961460818566844, guid: ed63d662624024771aa9bd883f78ce92, type: 2}
+  - {fileID: 1541076494905134, guid: 1eedb91fc18f449f4afe319b3ed1f452, type: 2}
+  thirdSectorTiles:
+  - {fileID: 1972225933047656, guid: 332100e18fc404b5890915c91081fee8, type: 2}
+  - {fileID: 1217482271403218, guid: 88ff836b79a9a4fe6bb98a3f3ec47e8c, type: 2}
+  - {fileID: 1132928958342158, guid: 88658a21357ae4fe5b3b0d0db4fcd10f, type: 2}
+--- !u!114 &114960438723818168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1035082538891162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03be517f842734012a8811ca033c9f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetx: 3

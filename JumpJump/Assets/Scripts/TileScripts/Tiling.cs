@@ -31,7 +31,6 @@ public class Tiling : MonoBehaviour {
 	{
         BoxCollider2D tileBoxCollider = GetComponent<BoxCollider2D>();
         tileWidth = tileBoxCollider.bounds.size.x;
-        //Debug.Log(specialTiles.Length);
 	}
 
 	void Update () {
@@ -50,7 +49,7 @@ public class Tiling : MonoBehaviour {
 
     void MakeANewTile(float offsety){
 
-        float r = Random.Range(0, 100);
+        /*float r = Random.Range(0, 100);
 
         if (r <= 65)
         {
@@ -58,7 +57,9 @@ public class Tiling : MonoBehaviour {
         }else
         {
             tileToInstantiate = specialTiles[Random.Range(0, specialTiles.Length)];
-        }
+           
+        }*/
+        tileToInstantiate = tile;
 
         Vector3 newPosition = new Vector3(myTransform.position.x + tileWidth, myTransform.position.y + offsety, myTransform.position.z);
         Instantiate(tileToInstantiate, newPosition, Quaternion.identity);
@@ -114,7 +115,7 @@ public class Tiling : MonoBehaviour {
 
         }
 
-        else /*if (canGoUp && !canGoUp)*/
+        else
         {
             if (r <= 40)
             {
