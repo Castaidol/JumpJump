@@ -49,7 +49,7 @@ public class Tiling : MonoBehaviour {
 
     void MakeANewTile(float offsety){
 
-        /*float r = Random.Range(0, 100);
+        float r = Random.Range(0, 100);
 
         if (r <= 65)
         {
@@ -58,8 +58,8 @@ public class Tiling : MonoBehaviour {
         {
             tileToInstantiate = specialTiles[Random.Range(0, specialTiles.Length)];
            
-        }*/
-        tileToInstantiate = tile;
+        }
+        //tileToInstantiate = tile;
 
         Vector3 newPosition = new Vector3(myTransform.position.x + tileWidth, myTransform.position.y + offsety, myTransform.position.z);
         Instantiate(tileToInstantiate, newPosition, Quaternion.identity);

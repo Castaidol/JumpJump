@@ -49,3 +49,6 @@ TagManager:
   - name: Knight
     uniqueID: 1252797231
     locked: 0
+  - name: Floor
+    uniqueID: 4140513731
+    locked: 0

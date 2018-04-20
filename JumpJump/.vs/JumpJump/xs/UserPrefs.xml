@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{F2C86690-93BE-43F3-0A08-ABAE2451ED7A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TileScripts/AcidObstacle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TileScripts/SpikeObstacleTile.cs">
     <Files>
-      <File FileName="Assets/Scripts/TileScripts/TileSprite.cs" Line="28" Column="11" />
-      <File FileName="Assets/Scripts/TileScripts/Tiling.cs" Line="100" Column="14" />
-      <File FileName="Assets/Scripts/TileScripts/MakeTheTile.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/TileScripts/AcidObstacle.cs" Line="7" Column="32" />
+      <File FileName="Assets/Scripts/TileScripts/TileSprite.cs" Line="27" Column="9" />
+      <File FileName="Assets/Scripts/TileScripts/Tiling.cs" Line="62" Column="11" />
+      <File FileName="Assets/Scripts/TileScripts/AcidObstacle.cs" Line="7" Column="43" />
+      <File FileName="Assets/Scripts/TileScripts/SpikeObstacle.cs" Line="34" Column="6" />
+      <File FileName="Assets/Scripts/TileScripts/SpikeObstacleTile.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TileScripts/FallingObstacleTiles.cs" Line="13" Column="5" />
+      <File FileName="Assets/Scripts/TileScripts/FallingObstacle.cs" Line="31" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

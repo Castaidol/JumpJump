@@ -6,8 +6,6 @@ public class AcidObstacle : MonoBehaviour {
 
     public GameObject firstSectorObstacle;
 
-    float offsetY;
-
 	void Start () {
         MakeATile();
 	}

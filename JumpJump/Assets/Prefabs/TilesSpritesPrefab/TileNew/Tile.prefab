@@ -81,7 +81,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetX: 2
   tile: {fileID: 1035082538891162}
-  specialTiles: []
+  specialTiles:
+  - {fileID: 1221909256277650, guid: 821745ab06cab48ba89ccdc595cb02b1, type: 2}
+  - {fileID: 1197677894067850, guid: 3ef99d77955db40369e0672b0024f429, type: 2}
   maxPositionTileY: 2
   minPositionTileY: -4
 --- !u!114 &114521979198554480

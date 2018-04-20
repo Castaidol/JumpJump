@@ -20,8 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4064924146042568}
   - component: {fileID: 212021720119978518}
+  - component: {fileID: 114518058272472020}
   m_Layer: 0
-  m_Name: Tiles1_3
+  m_Name: Acid_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114518058272472020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1773960804299420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03be517f842734012a8811ca033c9f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetx: 3
 --- !u!212 &212021720119978518
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -71,8 +84,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -154453565
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: b1bb5641557e44f668b93e189fbeb0c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
