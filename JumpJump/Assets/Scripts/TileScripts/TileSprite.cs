@@ -27,7 +27,7 @@ public class TileSprite : MonoBehaviour {
         Instantiate(firstSectorTiles[Random.Range(0, firstSectorTiles.Length)], tilePosition, Quaternion.identity);
         //tile.transform.parent = this.transform;
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 4; i++)
         {
             offsetY -= 2.5f;
             Vector3 bottomTilePosition = new Vector3(transform.position.x, transform.position.y + offsetY, transform.position.z);
